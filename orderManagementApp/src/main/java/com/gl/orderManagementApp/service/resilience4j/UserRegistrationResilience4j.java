@@ -28,9 +28,9 @@ public class UserRegistrationResilience4j {
 
 
     @CircuitBreaker(name = "service1", fallbackMethod = "fallbackForRegisterSeller")
-    @RateLimiter(name = "service1", fallbackMethod = "rateLimiterfallback")
-    @Retry(name = "retryService1", fallbackMethod = "retryfallback")
-    @Bulkhead(name = "bulkheadService1", fallbackMethod = "bulkHeadFallback")
+    //@RateLimiter(name = "service1", fallbackMethod = "rateLimiterfallback")
+    //@Retry(name = "retryService1", fallbackMethod = "retryfallback")
+    //@Bulkhead(name = "bulkheadService1", fallbackMethod = "bulkHeadFallback")
     public String registerSeller(SellerDto sellerDto) {
         String response = restTemplate.postForObject("/addSeller", sellerDto, String.class);
         return response;
