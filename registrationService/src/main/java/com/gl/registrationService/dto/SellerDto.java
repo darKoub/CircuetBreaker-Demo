@@ -2,9 +2,6 @@ package com.gl.registrationService.dto;
 
 import java.util.List;
 
-/**
- * @author - GreenLearner(https://www.youtube.com/channel/UCaH2MTg94hrJZTolW01a3ZA)
- */
 public class SellerDto {
 
     private long id;

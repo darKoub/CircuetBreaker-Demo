@@ -8,9 +8,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 
-/**
- * @author - GreenLearner(https://www.youtube.com/channel/UCaH2MTg94hrJZTolW01a3ZA)
- */
 
 @Service
 public class RegistrationServiceImpl implements RegistrationService {
